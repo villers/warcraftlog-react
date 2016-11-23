@@ -6,7 +6,11 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.17.2",
+    "moment": "^2.17.0",
     "react": "^15.4.0",
+    "react-bootstrap": "^0.30.6",
     "react-dom": "^15.4.0"
   },
   "scripts": {
@@ -14,5 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }
