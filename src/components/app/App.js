@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
 import MyNavbar from '../navbar/MyNavbar';
 import MyForm from '../form/MyForm';
 import MyTable from '../table/MyTable';
+import './App.css';
 
 
 class App extends Component {
@@ -22,9 +22,14 @@ class App extends Component {
             <div className="App">
                 <MyNavbar />
                 <MyForm callbackParent={this.onChildChanged} />
-                <MyTable data={this.state.data} />
+                {this.displayTable()}
             </div>
         );
+    }
+
+    displayTable() {
+        if (this.state.data.length !== 0)
+            return (<MyTable data={this.state.data} />)
     }
 }
 

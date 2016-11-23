@@ -1,11 +1,12 @@
-.table {
-    background-color: #FFF;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+.box {
+    background-color: #fff;
     border-radius: 5px;
+    box-shadow: none;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
-.table tbody tr:nth-last-child(1) td {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.combat-box {
+    border: solid 1px #F1F1F1;
+    margin-bottom: 15px;
 }

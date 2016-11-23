@@ -1,45 +1,59 @@
 import React, { Component } from 'react';
-import {Table} from 'react-bootstrap';
+import {Row, Col, Tab, Nav, NavItem, Panel} from 'react-bootstrap';
 import moment from 'moment';
 import './MyTable.css';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {data : props.data};
-    }
-
     render() {
         return (
             <div className="container">
-                <Table striped hover>
-                    <thead>
-                        <tr>
-                            <th>Boss Name{this.state.data}</th>
-                            <th>dificulty</th>
-                            <th>Class / Spe</th>
-                            <th>DPS</th>
-                            <th>ILVL</th>
-                            <th>Duration</th>
-                            <th>Date</th>
-                            <th>Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {this.props.data.map((character, i) =>
-                            <tr key={ i }>
-                                <td>{character.name}</td>
-                                <td>{this.dificulty(character.difficulty)}</td>
-                                <td>{character.specs[0].class} / {character.specs[0].spec}</td>
-                                <td>{character.specs[0].data[0].persecondamount}</td>
-                                <td>{character.specs[0].data[0].ilvl}</td>
-                                <td>{moment.utc(character.specs[0].data[0].duration).format('HH:mm:ss')}</td>
-                                <td>{moment.utc(character.specs[0].data[0].start_time).format('dddd, MMMM Do YYYY, HH:mm:ss')}</td>
-                                <td><a href="https://www.warcraftlogs.com/reports/{character.specs[0].data[0].report_code}/#fight={character.specs[0].data[0].report_fight}" target="_blank">Report</a></td>
-                            </tr>
-                        )}
-                    </tbody>
-                </Table>
+                <Row className="box">
+                    <Col sm={12}>
+                        <Tab.Container id="result" defaultActiveKey="0">
+                            <Row>
+                                <Col sm={4}>
+                                    <Nav stacked>
+                                        {this.props.data.map((character, i) =>
+                                            <NavItem key={ i } eventKey={ i }>
+                                                <h4>{character.name} <small>{this.dificulty(character.difficulty)}</small></h4>
+                                            </NavItem>
+                                        )}
+                                    </Nav>
+                                </Col>
+                                <Col sm={8}>
+                                    <Tab.Content animation>
+                                        {this.props.data.map((character, i) =>
+                                            <Tab.Pane key={ i } eventKey={ i }>
+                                                <Row>
+                                                    <Col sm={12}>
+                                                        {character.specs.map((spec, j) =>
+                                                            <Panel key={ j } header={spec.spec}>
+                                                                <ul className="list-unstyled">
+                                                                    {spec.data.map((data, j) =>
+                                                                        <li key={ j } className="combat-box">
+                                                                            <ul>
+                                                                                <li><b>Dps</b>: {data.persecondamount}</li>
+                                                                                <li><b>Ilvl</b>: {data.ilvl}</li>
+                                                                                <li><b>Duration</b>: {moment.utc(data.duration).format('HH:mm:ss')}</li>
+                                                                                <li><b>Date</b>: {moment.utc(data.start_time).format('dddd, MMMM Do YYYY, HH:mm:ss')}</li>
+                                                                                <li><b>Dps</b>: {data.persecondamount}</li>
+                                                                            </ul>
+                                                                            <a className="btn btn-link" href={`https://www.warcraftlogs.com/reports/${data.report_code}/#fight=${data.report_fight}`} target="_blank">Report</a>
+                                                                        </li>
+                                                                    )}
+                                                                </ul>
+                                                            </Panel>
+                                                        )}
+                                                    </Col>
+                                                </Row>
+                                            </Tab.Pane>
+                                        )}
+                                    </Tab.Content>
+                                </Col>
+                            </Row>
+                        </Tab.Container>
+                    </Col>
+                </Row>
             </div>
         );
     }

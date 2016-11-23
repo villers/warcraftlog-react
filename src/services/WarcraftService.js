@@ -6,12 +6,12 @@ class WarcraftService {
         this.apiKey = '19953fab295d93d4854fa405147b66b6';
     }
 
-    getCharacterParse(characterName, serverName, serverRegion) {
-        console.log(_);
-        return fetch(this.generateUrl(`parses/character/${characterName}/${serverName}/${serverRegion}`))
+    getCharacterParse(characterName, serverName, serverRegion, zone) {
+        return fetch(this.generateUrl(`parses/character/${characterName}/${serverName}/${serverRegion}`, zone))
             .then((response) => response.json())
             .then((response) => {
                 return _.chain(response)
+                    .forEach((item) => item.specs = _.filter(item.specs, (row) => row.spec !== 'Ranged'))
                     .orderBy('name')
                     .orderBy((i) => i.specs.filter((i) => !i.combined)[0].data[0].start_time)
                     .value();
@@ -21,8 +21,8 @@ class WarcraftService {
             });
     }
 
-    generateUrl(path) {
-        return `${this.apiUrl}${path}?api_key=${this.apiKey}`;
+    generateUrl(path, zone) {
+        return `${this.apiUrl}${path}?api_key=${this.apiKey}&zone=${zone}`;
     }
 }
 
