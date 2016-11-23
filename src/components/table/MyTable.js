@@ -3,7 +3,7 @@ import {Row, Col, Tab, Nav, NavItem, Panel} from 'react-bootstrap';
 import moment from 'moment';
 import './MyTable.css';
 
-class App extends Component {
+class MyTable extends Component {
     render() {
         return (
             <div className="container">
@@ -70,4 +70,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default MyTable;
