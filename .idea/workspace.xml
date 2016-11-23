@@ -21,7 +21,21 @@
     <favorites_list name="react-wow" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,6 +71,7 @@
         <option value="$PROJECT_DIR$/src/components/app/App.css" />
         <option value="$PROJECT_DIR$/src/components/form/MyForm.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -704,16 +719,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479805433451</updated>
-      <workItem from="1479805435101" duration="27669000" />
+      <workItem from="1479805435101" duration="27745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27669000" />
+    <option name="totallyTimeSpent" value="27745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -726,7 +741,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -751,53 +766,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1479813318000" expanded="true" signature="7326:7389" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="7355:7387" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="8589:8620" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="8602:8618" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="8726:8791" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="8870:8925" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="8883:8923" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="10297:10317" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="10353:10410" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="10492:10597" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="10505:10595" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="11676:11742" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="11775:12062" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="12576:12626" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="12733:12820" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="13039:13079" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="15415:15680" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="15419:15613" ph="//..." />
-              <marker date="1479813318000" expanded="true" signature="16876:16960" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="20119:20266" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="20206:20259" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="20408:20434" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="26788:26913" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="26797:26913" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="30880:30894" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="31812:31890" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="31929:31974" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="32860:32938" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="32977:32989" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="33911:33989" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="34027:34062" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="35120:35170" ph="..." />
-              <marker date="1479813318000" expanded="true" signature="35643:35709" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="37921:37982" ph="{...}" />
-              <marker date="1479813318000" expanded="true" signature="41170:41220" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -953,6 +921,17 @@
         <state relative-caret-position="90">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
