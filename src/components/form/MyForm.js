@@ -10,7 +10,7 @@ class MyForm extends Component {
 
         this.WarcraftService = new WarcraftService();
 
-        this.state = {characterName: '', serverName: '', serverRegion: 'EU', zone: '12', data: []};
+        this.state = {characterName: '', serverName: '', serverRegion: 'EU', zone: '11', data: []};
         this.handleChange = this.handleChange.bind(this);
         this.updateData = _.debounce(this.updateData.bind(this), 1000);
     }

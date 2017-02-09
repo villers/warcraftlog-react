@@ -2,6 +2,7 @@
   "name": "react-wow",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://galaparo.fr.cr/omega/warcraftlog2",
   "devDependencies": {
     "react-scripts": "0.7.0"
   },
