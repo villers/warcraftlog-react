@@ -35,6 +35,7 @@ class MyForm extends Component {
                     </FormControl>
 
                     <FormControl componentClass="select" placeholder="Raid name" name="zone" value={this.state.zone} onChange={this.handleChange}>
+                        <option value="11">NightHold</option>
                         <option value="12">Trial Of Valor</option>
                         <option value="10">The Emerald Nightmare</option>
                     </FormControl>
